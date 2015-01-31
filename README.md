@@ -1,0 +1,2 @@
+# Bycycle
+Bycycle is a mobile application which rewards bicycle riders for riding their bicycles daily with virtual treasures which can be turned into real life valuables. Application collects a user's data about routes, distances, habits and most trespassed areas. Bycycle encourages and motivates children to ride their bicycles instead of a car ride or public transportation to get to the school, friends, hobbies or simply shop. 
