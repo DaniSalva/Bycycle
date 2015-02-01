@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/idReward"
+    android:background="#80000000"
+    android:gravity="center_horizontal"
+    android:alpha="50"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="188dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageCoin"
+        android:src="@drawable/coin"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:text="You have tracked"
+    android:textColor="#ffffff"
+    android:textSize="35sp"
+    android:textStyle="bold"
+    android:id="@+id/textTracked" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 Km"
+            android:textColor="#b3ffe651"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:id="@+id/KmTracked" />
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="and you get"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:id="@+id/textget" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 coins"
+            android:textColor="#b3ffe651"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:id="@+id/textCoins" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Return"
+        android:textSize="35sp"
+        android:id="@+id/buttonmenu"
+        android:onClick="backtomenu"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

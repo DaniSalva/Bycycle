@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bycycle</string>
+    <string name="authors">"Ride_A_Bike - ITS"</string>
+ 	<string name="button_track">Track</string>
+ 	<string name="button_stats">Stats</string>
+ 	<string name="button_routes">My routes</string>
+    <string name="button_shop">Shop</string>
+ 	<string name="b_finish">Finish</string>
+ 	
+    <string name="action_settings">Settings</string>
+    <string name="refresh_action">Refresh</string>
+    <string name="logout_action">Logout</string>
+    <string name="action_search">Search</string>
+    
+    <!-- AuthenticationActivity -->
+    <string name="label_nickname">Nickname</string>
+    <string name="label_email_address">Email Address</string>
+    <string name="label_password">Password</string>
+    <string name="label_sign_in">Sign In</string>
+    <string name="label_log_in">Login</string>
+    
+    <string name="register">Register</string>
+   	<string name="changeToLogin">Already registred. Login Me!</string>
+        
+    <string name="message_signing_in">Signing in…</string>
+    <string name="blank_field_warning">Please populate this field</string>
+    <string name="message_bad_credentials">Email Address or Password is incorrect</string>
+    <string name="message_auth_failed">Please enter a valid password</string>
+    <string name="message_auth_failed_new_account">Please enter a valid email address &amp; password</string>
+    
+    <string name="home">Home</string>
+    <string name="time">00:00:00</string>
+    <string name="num_km">0.0 Km</string>
+
+    <!--STATS-->
+
+    <string name="Stats">My stats </string>
+
+    <string name="Name">Name: Sammi </string>
+    <string name="Age">Age: 8 </string>
+    <string name="Ocupation">Ocupation: </string>
+    <string name="Regularity">Regularity: 1 </string>
+
+    <string name="TKm">Total distance:  6 Km </string>
+    <string name="Media">Media km/trip: 6 Km </string>
+    <string name="TTime">Total time: --:--:--</string>
+    <string name="NTrips">Number of trips: 1</string>
+
+    <string name="TKm_t">Total distance:  11 Km </string>
+    <string name="Media_t">Media km/trip: 5,5 Km </string>
+    <string name="TTime_t">Total time: --:--:--</string>
+    <string name="NTrips_t">Number of trips: 2</string>
+
+    <string name="tab1_label">Daily</string>
+    <string name="tab2_label">Monthly</string>
+    <string name="tab3_label">Total</string>
+
+
+    <!--  About
+    -->
+    <string name="about">Bycycle has been possible thanks to:</string>
+    <string name="dani">Daniel Salvador - Coder</string>
+    <string name="suvi">Suvi Heiskanen - Project manager</string>
+    <string name="rolands">Rolands Tiss - UI designer</string>
+    <string name="emi">Emilia Hakala - Researcher</string>
+    <string name="demola">Demola and ITS Factory  project</string>
+    <string name="action_about">About</string>
+
+
+
+
+</resources>

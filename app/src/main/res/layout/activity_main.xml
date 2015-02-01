@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:background="#323331"
+        android:id="@+id/statusbar"
+        android:weightSum="1">
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/header"
+        android:src="@drawable/profile_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/text"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+     <ImageView
+
+        android:id="@+id/coinMain"
+        android:src="@drawable/coin"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+         android:layout_weight="0.14" />
+     
+     <TextView
+        android:id="@+id/ViewCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="550" 
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+         />
+     </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="false"
+        android:id="@+id/scroll">
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:gravity="center_horizontal"
+            >
+
+
+            <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/margleftbut"
+                    >
+                    <ImageButton
+                        android:id="@+id/b_track"
+                        android:layout_width="@dimen/buttons_main"
+                        android:layout_height="@dimen/buttons_main"
+                        android:background="@drawable/round_button"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="track"
+                        android:textColor="#fff"
+                        android:src="@drawable/track"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/button_track"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textMain"
+                        android:textStyle="bold"
+                        android:id="@+id/textView" />
+                    </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    >
+                    <ImageButton
+                        android:id="@+id/b_routes"
+                        android:layout_width="@dimen/buttons_main"
+                        android:layout_height="@dimen/buttons_main"
+                        android:background="@drawable/round_button"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="route"
+                        android:textColor="#fff"
+                        android:src="@drawable/map"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/button_routes"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/textMain"
+                        android:textStyle="bold"
+                        android:id="@+id/textView2" />
+                    </LinearLayout>
+        </LinearLayout>
+
+
+
+            <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center_horizontal"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margleftbut"
+                android:gravity="center_horizontal"
+                >
+                <ImageButton
+                    android:id="@+id/b_stats"
+                    android:layout_width="@dimen/buttons_main"
+                    android:layout_height="@dimen/buttons_main"
+                    android:background="@drawable/round_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:onClick="stats"
+                    android:textColor="#fff"
+                    android:src="@drawable/stats"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/button_stats"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/textMain"
+                    android:textStyle="bold"
+                    android:id="@+id/textView3" />
+                </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                >
+                <ImageButton
+                    android:id="@+id/b_shop"
+                    android:layout_width="@dimen/buttons_main"
+                    android:layout_height="@dimen/buttons_main"
+                    android:background="@drawable/round_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:onClick="shop"
+                    android:textColor="#fff"
+                    android:src="@drawable/shop"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/button_shop"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/textMain"
+                    android:textStyle="bold"
+                    android:id="@+id/textView4" />
+                </LinearLayout>
+        </LinearLayout>
+            <!--<Button
+                android:id="@+id/button1"
+                style="@style/ShadowText"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_background_states"
+                android:gravity="center"
+                android:onClick="track"
+                android:padding="10dp"
+                android:text="@string/button_track"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawablePadding="15dp"
+        		android:drawableRight="@drawable/bici"/>
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/ShadowText"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_background_states"
+                android:gravity="center"
+                android:onClick="route"
+                android:padding="10dp"
+                android:text="@string/button_routes"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawablePadding="5dp"
+        		android:drawableRight="@drawable/routes"/>
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/ShadowText"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/button_background_states"
+                android:gravity="center"
+                android:onClick="stats"
+                android:padding="10dp"
+                android:text="@string/button_stats"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:textStyle="bold" 
+                android:drawablePadding="5dp"
+        		android:drawableRight="@drawable/stats"/>
+        		-->
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="135dp"
+    android:background="@drawable/main_background"
+    >
+
+    <!-- title -->
+    <!--android:layout_toRightOf="@+id/item_icon"
+      android:layout_alignBaseline="@+id/item_icon"-->
+
+    <TextView
+        android:id="@+id/textRowl"
+        android:textColor="@color/blue_main"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textRow2"
+        android:textColor="@color/chalk_color"
+        android:textSize="18sp"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/textRow3"
+        android:textColor="@color/chalk_color"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/textRow4"
+        android:textColor="@color/chalk_color"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/textRow5"
+        android:textColor="@color/chalk_color"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</LinearLayout>

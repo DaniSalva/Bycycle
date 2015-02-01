@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="@string/NTrips"
+            android:id="@+id/NTrips"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="@string/TKm"
+            android:id="@+id/TKm"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="@string/Media"
+            android:id="@+id/Media"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="@string/TTime"
+            android:id="@+id/TotalTime"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+</LinearLayout>

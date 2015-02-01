@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3b3b3b" >
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+        <!--  View Title Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="REGISTER"
+            android:textSize="25dip"
+            android:textStyle="bold"
+            android:textColor="@color/text_title"
+             />
+        <!--  Name Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nickname"
+            android:textColor="@color/text_inverted"
+            />
+        <!--  Name TextField -->
+        <EditText
+            android:id="@+id/registerNickname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+         
+        <!--  Email Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Email"
+           	android:textColor="@color/text_inverted"
+             />
+        <!--  Email TextField -->
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+         
+        <!--  Password Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Password"
+            android:textColor="@color/text_inverted" />
+
+        <!--  Password TextField -->
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:password="true" />
+        <!--  Password Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Confirm password"
+            android:textColor="@color/text_inverted" />
+
+        <!--  Password TextField -->
+        <EditText
+            android:id="@+id/ConfirmPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:password="true" />
+
+        <!--  Age Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Age"
+            android:textColor="@color/text_inverted" />
+
+        <!--  Age TextField -->
+        <EditText
+            android:id="@+id/Age"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <!--  Login Button -->
+        <Button
+            android:id="@+id/b_Register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_rectangle"
+           	android:gravity="center"
+           	android:textColor="@color/text"	
+            android:text="@string/register"
+            android:onClick="handleRegister"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            style="@style/ShadowText"
+             />
+ 
+        <!--  Link to Login Screen -->
+        <Button
+            android:id="@+id/b_LinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dip"
+            android:background="@null"
+            android:onClick="handleLogin"
+            android:text="@string/changeToLogin"
+            android:textColor="#21dbd4"
+            android:textStyle="bold"
+            
+             />
+    </LinearLayout>
+ 
+</ScrollView>
