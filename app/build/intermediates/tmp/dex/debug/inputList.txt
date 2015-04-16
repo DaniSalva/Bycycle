@@ -1,0 +1,14 @@
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\classes\debug
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-ff2d7f5022b5a92fc988e7ecf40140c2621ade2e.jar
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\pre-dexed\debug\slf4j-simple-1.7.8-252c30b4740aff762679fb8d762ff85b2284cc73.jar
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\pre-dexed\debug\slf4j-api-1.7.8-2a43d78cdaef47a05d3cbf304dbf94e1c347ebb8.jar
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\pre-dexed\debug\slf4j-ext-1.7.8-e4b06ad415b61e66258e390fb9151c2602fb8771.jar
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\pre-dexed\debug\gson-2.2.4-d8f2352e7f7aeeb0e8b5e39319e0c96f8148a2b5.jar
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-9926870b70dc639b22ddbe3cf193dfb13c7d90cd.jar
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\pre-dexed\debug\osmbonuspack_v5.0-ae4dfd794b4a885a058bc097fc032cc52aef160e.jar
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\pre-dexed\debug\classes-46415f91c37ef8e650823cb6956f9b06ef4297a8.jar
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-c51325852b9653a6fff4a40b01363429ebf3751f.jar
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\pre-dexed\debug\mapquest-android-sdk-1.0.5-4a05471db1dd537603dcba586b8c241b143f948e.jar
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\pre-dexed\debug\commons-lang3-3.3.2-26ae4d5b3d7d5a37bfc056cf1b7bc3278adc80ba.jar
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\pre-dexed\debug\classes-c943cd0e1df191c38d17620c85a564949acd4823.jar
+C:\Users\Dani\Desktop\Clase\TAMPERE_TERCERO\AndroidStudio\com.example.bycycle\app\build\intermediates\pre-dexed\debug\classes-533cfb6c4005cff0d0881b2bd6cf1921d3f43a6e.jar

@@ -23,9 +23,10 @@ import org.osmdroid.util.GeoPoint;
 public class TrackingCalculations extends Service implements LocationListener {
 	
 	private LocationManager locationManager;
-	//private TrackingInteractionListener mListener;
-	
+
 	public static final String LOC = "LocationChanged";
+    static final long MIN_TIME = 10000; //10000 m
+    static final float MIN_DIST  = 25; //30 m
 
 	@Override
 	public IBinder onBind(Intent intent) {return null;}
@@ -40,7 +41,7 @@ public class TrackingCalculations extends Service implements LocationListener {
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         // Register the listener with the Location Manager to receive location updates
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10000, 30, this);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, MIN_TIME, MIN_DIST, this);
         return Service.START_STICKY;
     }
 

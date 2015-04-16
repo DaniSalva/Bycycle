@@ -3,14 +3,10 @@ package com.example.bycycle.ui;
 import java.util.ArrayList;
 
 import org.osmdroid.api.IMapController;
-import org.osmdroid.bonuspack.overlays.FolderOverlay;
 import org.osmdroid.bonuspack.overlays.Marker;
-import org.osmdroid.bonuspack.overlays.Polyline;
 import org.osmdroid.bonuspack.routing.OSRMRoadManager;
-import org.osmdroid.bonuspack.routing.Road;
 import org.osmdroid.bonuspack.routing.RoadManager;
 
-import org.osmdroid.bonuspack.routing.RoadNode;
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.MapView;
@@ -26,10 +22,12 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
+import android.graphics.Paint;
+import android.graphics.Point;
+import android.graphics.RectF;
 import android.location.Location;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.v4.content.LocalBroadcastManager;
@@ -68,8 +66,12 @@ public class GPSMain extends Activity {
     public String routeName;
     public PathOverlay myPath;
     public Location prevPoint;
+    public boolean startPoint;
 
     LoginDataBaseAdapter loginDataBaseAdapter;
+
+    static final long MIN_DIST = 250; //Min distance, anti-cheating
+
 
 
     @Override
@@ -101,6 +103,10 @@ public class GPSMain extends Activity {
         waypoints = new ArrayList<GeoPoint>();
         totalKM=0;
         myPath = new PathOverlay(Color.RED, this);
+        Paint pPaint = myPath.getPaint();
+        pPaint.setStrokeWidth(5);
+        myPath.setPaint(pPaint);
+        startPoint=true;
 
         /*
         Initialization of LocationOverlay and Compass
@@ -158,7 +164,6 @@ public class GPSMain extends Activity {
     }
 
 
-
     /*
         Handler for received Intents for the "locationChanged" event
      */
@@ -185,22 +190,31 @@ public class GPSMain extends Activity {
                     kmProv=Math.round(kmProv*Math.pow(10,1))/Math.pow(10,1);
                     changeKm.setText(kmProv+" Km");
                 }
+
+                if(startPoint){
+                    Marker startMarker = new Marker(map);
+                    startMarker.setPosition(position);
+                    startMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+                    startMarker.setIcon(getResources().getDrawable(R.drawable.ic_launcher));
+                    startMarker.setTitle("Start point");
+                    map.getOverlays().add(startMarker);
+                    startPoint=false;
+                }
                 map.getOverlays().add(myPath);
                 map.invalidate();
             }
                 }
     };
 
-
     /*
         Calculate the reward of the trip.
-        ** Minimum distance: 500m.
+        ** Minimum distance: MIN_DIST.
         ** 50 coins / route
         ** 10 coins / 100 meters
      */
     public int reward(double km) {
         int coins = 0;
-        if(km>499){
+        if(km>=MIN_DIST){
             coins = ((int)(km/100))*10* regularity_factor;
             coins+=50;
         }

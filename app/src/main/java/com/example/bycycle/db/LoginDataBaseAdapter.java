@@ -28,7 +28,7 @@ public class LoginDataBaseAdapter
     {
         db = dbHelper.getWritableDatabase();
 
-        //Restart Database
+        //Restart Database (uncomment it for restart and then comment it and install the app again)
         //dbHelper.onUpgrade(db,0,1);
 
         return this;
